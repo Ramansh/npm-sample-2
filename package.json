@@ -1,0 +1,22 @@
+{
+  "name": "ttesting-interface",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "lint:all": "eslint ./",
+    "lint:changes": "git diff --name-only | grep -E '\\.js?$' | xargs eslint",
+    "clear": "node ./webpack/cleanFolders.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@atlassian.tools.bo.local:7999/dt/testing-interface.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "angular": "1.5.7",
+    "jquery": "2.2.4"
+  },
+  "keywords": [],
+  "description": ""
+}
